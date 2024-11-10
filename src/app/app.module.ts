@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { BookRoomComponent } from './components/book-room/book-room.component';
 import { ViewRoomComponent } from './components/view-room/view-room.component';
-import { DeleteMeetingComponent } from './components/delete-meeting/delete-meeting.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RoomStatusComponent } from './components/room-status/room-status.component';  // Import HttpClientModule for HTTP requests
 
@@ -17,7 +16,6 @@ import { RoomStatusComponent } from './components/room-status/room-status.compon
     HomeComponent,
     BookRoomComponent,
     ViewRoomComponent,
-    DeleteMeetingComponent,
     RoomStatusComponent
   ],
   imports: [

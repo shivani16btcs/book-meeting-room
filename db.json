@@ -41,5 +41,16 @@
       "name": "Room J"
     }
   ],
-  "meetings": []
+  "meetings": [
+    {
+      "id": "92ec",
+      "username": "",
+      "room": "",
+      "date": "",
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "agenda": "",
+      "status": "Booked"
+    }
+  ]
 }
