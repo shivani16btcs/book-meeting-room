@@ -1,0 +1,32 @@
+<div class="meeting-container">
+  <h2 class="heading">All Meetings</h2>
+
+  <table class="meeting-table">
+    <thead>
+      <tr>
+        <th>Room</th>
+        <th>Status</th>
+        <th>User</th>
+        <th>Date</th> <!-- Added Date Column -->
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Agenda</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let meeting of meetings">
+        <td>{{ meeting.room }}</td>
+        <td>{{ meeting.status }}</td>
+        <td>{{ meeting.username }}</td>
+        <td>{{ meeting.date | date:'yyyy-MM-dd' }}</td> <!-- Displaying Date in 'yyyy-MM-dd' format -->
+        <td>{{ meeting.startTime }}</td>
+        <td>{{ meeting.endTime }}</td>
+        <td>{{ meeting.agenda }}</td>
+        <td>
+          <button (click)="deleteMeeting(meeting.id)" class="btn-delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

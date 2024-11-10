@@ -1,53 +1,36 @@
-.btn-book-room {
-  background-color: rgb(29, 79, 203);
-  color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.heading {
-  font-size: 24px;
-}
-
-.meeting-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.meeting-item {
+.nav-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
+  align-items: center;  /* Vertically centers the items */
+  gap: 20px;  /* Adds space between the elements */
   padding: 10px;
-  border-radius: 5px;
+  background-color: #f4f4f4;  /* Optional: Adds a background color */
+  border-radius: 8px;  /* Optional: Rounds the corners of the container */
 }
 
-.room-info {
-  font-size: 14px;
-}
-
-.room-info strong {
-  font-weight: bold;
-  margin-right: 5px;
-}
-
-.btn-delete {
-  background-color: #f44336;
+.btn-book-room, .btn-toggle-view {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
   color: white;
-  padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.btn-delete:hover {
-  background-color: #d32f2f;
+.btn-book-room:hover, .btn-toggle-view:hover {
+  background-color: #0056b3;
 }
 
-.home-container{
-    margin:20px 10px
+/* Optionally, you can adjust button widths or responsiveness */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;  /* Stack the items vertically on smaller screens */
+    align-items: flex-start;  /* Align the items to the left */
+  }
+
+  .btn-book-room, .btn-toggle-view {
+    width: 100%;  /* Make the buttons full width on small screens */
+    margin-bottom: 10px;  /* Adds space between stacked elements */
+  }
 }

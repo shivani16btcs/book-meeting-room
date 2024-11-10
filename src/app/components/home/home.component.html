@@ -1,20 +1,19 @@
 <div class="home-container">
 
+  <div class="nav-container">
+    <!-- Toggle Button to switch between views -->
+    <button (click)="toggleView()" class="btn-toggle-view">
+      {{ isShowingMeetings ? 'Show Available Rooms' : 'Show My Meetings' }}
+    </button>
+  </div>
 
-<nav>
-  <a routerLink="/book" class="btn-book-room">Book a Room</a>
-</nav>
+  <!-- Conditionally show the components -->
+  <div *ngIf="isShowingMeetings">
+    <app-show-meeting></app-show-meeting>
+  </div>
 
-<h2 class="heading">My Meeting</h2>
+  <div *ngIf="!isShowingMeetings">
+    <app-view-room></app-view-room>
+  </div>
 
-<ul class="meeting-list">
-  <li *ngFor="let meeting of meetings" class="meeting-item">
-    <span class="room-info">
-      <strong>Room:</strong> {{ meeting.room }} 
-      <strong>Status:</strong> {{ meeting.status }} 
-      <strong>User:</strong> {{ meeting.username }}
-    </span>
-    <button (click)="deleteMeeting(meeting.id)" class="btn-delete">Delete</button>
-  </li>
-</ul>
 </div>

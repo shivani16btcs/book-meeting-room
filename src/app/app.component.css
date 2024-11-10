@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgb(223, 220, 220);
-    padding: 8px 16px;
+    padding: 16px 40px;
     color: black;
   }
 
@@ -21,4 +21,16 @@
 
   .logout-btn:hover {
     background-color: lightgrey;
+  }
+
+
+  .btn-book-room, .btn-toggle-view {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #062a50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }

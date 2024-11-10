@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class BookRoomComponent implements OnInit {
   newMeeting: Meeting = {
-    username: '',
+    username: 'monkey man',
     room: '',
     date: '',
     startTime: '',

@@ -1,0 +1,71 @@
+/* Style for room availability card */
+.room-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room-card h3 {
+    color: #333;
+  }
+  
+  .room-card p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .room-card .available {
+    color: green;
+  }
+  
+  .room-card .unavailable {
+    color: red;
+  }
+  
+  .room-card ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .room-card li {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .room-card ul li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+
+  .slots-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .slot-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .slot {
+    flex: 1;  /* Ensure the slots are evenly spaced */
+    padding: 8px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    min-width: 90px;  /* To ensure each slot has a minimum width */
+    max-width: 100px;  /* Optional: to avoid stretching */
+  }
+  
+  .slot:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .room-availability-container{
+    padding: 20px
+  }

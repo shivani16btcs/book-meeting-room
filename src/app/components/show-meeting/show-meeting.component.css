@@ -1,0 +1,36 @@
+.meeting-container {
+  padding: 20px;
+}
+
+.meeting-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.meeting-table th, .meeting-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.meeting-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.meeting-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.btn-delete {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: darkred;
+}

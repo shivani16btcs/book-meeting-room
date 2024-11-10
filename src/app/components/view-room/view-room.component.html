@@ -1,1 +1,33 @@
-<p>view-room works!</p>
+<div class="room-availability-container">
+<h2>Room Availability</h2>
+
+<!-- Date Selector -->
+<div class="date-selector">
+  <label for="date">Select Date:</label>
+  <input type="date" id="date" [(ngModel)]="selectedDate" (change)="filterByDate()" />
+</div>
+
+<div *ngFor="let room of rooms" class="room-card">
+  <h3>{{ room.name }}</h3>
+  <p>Status: 
+    <span [ngClass]="{'available': getAvailableTimes(room.name).length > 0, 'unavailable': getAvailableTimes(room.name).length === 0}">
+      {{ getAvailableTimes(room.name).length > 0 ? 'Available' : 'Unavailable' }}
+    </span>
+  </p>
+
+  <div *ngIf="getAvailableTimes(room.name).length > 0">
+    <p><strong>Available slots:</strong></p>
+    <div class="slots-container">
+      <div class="slot-row" *ngFor="let times of chunkArray(getAvailableTimes(room.name), 3)">
+        <span class="slot" *ngFor="let time of times">{{ time }}</span>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div *ngIf="getAvailableTimes(room.name).length === 0">
+    <p>No available times</p>
+  </div>
+</div>
+</div>
