@@ -1,0 +1,20 @@
+<div class="home-container">
+
+
+<nav>
+  <a routerLink="/book" class="btn-book-room">Book a Room</a>
+</nav>
+
+<h2 class="heading">My Meeting</h2>
+
+<ul class="meeting-list">
+  <li *ngFor="let meeting of meetings" class="meeting-item">
+    <span class="room-info">
+      <strong>Room:</strong> {{ meeting.room }} 
+      <strong>Status:</strong> {{ meeting.status }} 
+      <strong>User:</strong> {{ meeting.username }}
+    </span>
+    <button (click)="deleteMeeting(meeting.id)" class="btn-delete">Delete</button>
+  </li>
+</ul>
+</div>

@@ -1,0 +1,42 @@
+<h2>Book a Meeting Room</h2>
+<form (submit)="bookMeeting()" class="booking-form">
+  <div class="form-group">
+    <label>Username:
+      <input [(ngModel)]="newMeeting.username" name="username" required />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Room:
+      <select [(ngModel)]="newMeeting.room" name="room" required>
+        <option *ngFor="let room of rooms" [value]="room.name">{{ room.name }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Date:
+      <input [(ngModel)]="newMeeting.date" name="date" type="date" required />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Start Time:
+      <input [(ngModel)]="newMeeting.startTime" name="startTime" type="time" required />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>End Time:
+      <input [(ngModel)]="newMeeting.endTime" name="endTime" type="time" required />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Agenda:
+      <input [(ngModel)]="newMeeting.agenda" name="agenda" required />
+    </label>
+  </div>
+
+  <button type="submit" class="submit-button">Book Meeting</button>
+</form>

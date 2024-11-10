@@ -1,0 +1,76 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Room A"
+    },
+    {
+      "id": "2",
+      "name": "Room B"
+    },
+    {
+      "id": "3",
+      "name": "Room C"
+    },
+    {
+      "id": "4",
+      "name": "Room D"
+    },
+    {
+      "id": "5",
+      "name": "Room E"
+    },
+    {
+      "id": "6",
+      "name": "Room F"
+    },
+    {
+      "id": "7",
+      "name": "Room G"
+    },
+    {
+      "id": "8",
+      "name": "Room H"
+    },
+    {
+      "id": "9",
+      "name": "Room I"
+    },
+    {
+      "id": "10",
+      "name": "Room J"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "b437",
+      "username": "shivaniyadav_dev",
+      "room": "Room B",
+      "date": "2024-11-20",
+      "startTime": "23:00",
+      "endTime": "20:03",
+      "agenda": "hjgjh",
+      "status": "Booked"
+    },
+    {
+      "id": "2044",
+      "username": "shivaniyadav_dev",
+      "room": "Room B",
+      "date": "2024-11-13",
+      "startTime": "01:12",
+      "endTime": "01:12",
+      "agenda": "hjgjh",
+      "status": "Booked"
+    },
+    {
+      "id": "9d4d",
+      "username": "shivaniyadav_dev",
+      "room": "Room C",
+      "date": "2024-11-14",
+      "startTime": "23:19",
+      "endTime": "02:25",
+      "agenda": "hjgjh",
+      "status": "Booked"
+    }
+  ]
+}

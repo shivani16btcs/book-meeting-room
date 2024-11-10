@@ -1,0 +1,53 @@
+.btn-book-room {
+  background-color: rgb(29, 79, 203);
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.heading {
+  font-size: 24px;
+}
+
+.meeting-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meeting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.room-info {
+  font-size: 14px;
+}
+
+.room-info strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+.home-container{
+    margin:20px 10px
+}
