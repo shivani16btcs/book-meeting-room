@@ -1,41 +1,39 @@
 <h2>Book a Meeting Room</h2>
 <form (submit)="bookMeeting()" class="booking-form">
   <div class="form-group">
-    <label>Username:
-      <input [(ngModel)]="newMeeting.username" name="username" required />
-    </label>
+    <label for="username">Username:</label>
+    <input id="username" [(ngModel)]="newMeeting.username" name="username" required />
   </div>
 
   <div class="form-group">
-    <label>Room:
-      <select [(ngModel)]="newMeeting.room" name="room" required>
-        <option *ngFor="let room of rooms" [value]="room.name">{{ room.name }}</option>
-      </select>
-    </label>
+    <label for="room">Room:</label>
+    <select id="room" [(ngModel)]="newMeeting.room" name="room" required>
+      <option *ngFor="let room of rooms" [value]="room.name">{{ room.name }}</option>
+    </select>
   </div>
 
   <div class="form-group">
-    <label>Date:
-      <input [(ngModel)]="newMeeting.date" name="date" type="date" required />
-    </label>
+    <label for="date">Date:</label>
+    <input id="date" [(ngModel)]="newMeeting.date" name="date" type="date" required />
   </div>
 
   <div class="form-group">
-    <label>Start Time:
-      <input [(ngModel)]="newMeeting.startTime" name="startTime" type="time" required />
-    </label>
+    <label for="startTime">Start Time:</label>
+    <select id="startTime" [(ngModel)]="newMeeting.startTime" name="startTime" (change)="updateEndTimes()" required>
+      <option *ngFor="let time of timeOptions" [value]="time">{{ time }}</option>
+    </select>
   </div>
 
   <div class="form-group">
-    <label>End Time:
-      <input [(ngModel)]="newMeeting.endTime" name="endTime" type="time" required />
-    </label>
+    <label for="endTime">End Time:</label>
+    <select id="endTime" [(ngModel)]="newMeeting.endTime" name="endTime" required>
+      <option *ngFor="let time of availableEndTimes" [value]="time">{{ time }}</option>
+    </select>
   </div>
 
   <div class="form-group">
-    <label>Agenda:
-      <input [(ngModel)]="newMeeting.agenda" name="agenda" required />
-    </label>
+    <label for="agenda">Agenda:</label>
+    <input id="agenda" [(ngModel)]="newMeeting.agenda" name="agenda" required />
   </div>
 
   <button type="submit" class="submit-button">Book Meeting</button>

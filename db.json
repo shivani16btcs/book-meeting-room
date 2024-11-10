@@ -41,36 +41,5 @@
       "name": "Room J"
     }
   ],
-  "meetings": [
-    {
-      "id": "b437",
-      "username": "shivaniyadav_dev",
-      "room": "Room B",
-      "date": "2024-11-20",
-      "startTime": "23:00",
-      "endTime": "20:03",
-      "agenda": "hjgjh",
-      "status": "Booked"
-    },
-    {
-      "id": "2044",
-      "username": "shivaniyadav_dev",
-      "room": "Room B",
-      "date": "2024-11-13",
-      "startTime": "01:12",
-      "endTime": "01:12",
-      "agenda": "hjgjh",
-      "status": "Booked"
-    },
-    {
-      "id": "9d4d",
-      "username": "shivaniyadav_dev",
-      "room": "Room C",
-      "date": "2024-11-14",
-      "startTime": "23:19",
-      "endTime": "02:25",
-      "agenda": "hjgjh",
-      "status": "Booked"
-    }
-  ]
+  "meetings": []
 }

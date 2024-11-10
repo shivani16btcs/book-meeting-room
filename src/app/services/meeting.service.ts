@@ -26,4 +26,8 @@ export class MeetingService {
   getRooms(): Observable<{ id: number; name: string }[]> {
     return this.http.get<{ id: number; name: string }[]>(`${this.apiUrl}/rooms`);
   }
+
+  getMeetingsByDate(date: string): Observable<Meeting[]> {
+    return this.http.get<Meeting[]>(`/api/meetings?date=${date}`);
+  }
 }
